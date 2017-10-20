@@ -134,6 +134,7 @@ a{
     color: #ff6700;
 }
 .sub-menu{
+    background: red;
     position: absolute;
     left:0px;
     top:100px;
