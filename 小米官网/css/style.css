@@ -86,6 +86,8 @@ a{
     box-shadow: 0 0px 5px 1px rgba(0,0,0,0.1);
     overflow: hidden;
     display: none;
+    background: #fff;
+    z-index:1;
 }
 .user-info .cart:hover .cart-box{
     display: block;
@@ -97,8 +99,52 @@ a{
     }
 }
 /*nav开始*/
+/*header开始*/
+.header{
+    height: 100px;
+    position: relative;
+}
+.logo{
+    margin-top: 22px;
+    float: left;
+}
+.link-logo{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: url("../img/mi-logo.png") center center no-repeat #ff6700;
+}
+.main-menu{
+    float: left;
+    margin-left: 180px;
+}
+.menu-item{
+    float: left;
+    padding: 42px 0;
+}
+.menu-item a{
+    font-size: 16px;
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+.menu-item:hover a{
+    color: #ff6700;
+}
+.sub-menu{
+    position: absolute;
+    left:0px;
+    top:100px;
+    width: 100%;
+    display: none;
+}
+.menu-item:hover .sub-menu{
+    display: block;
+}
 
-
+/*header结束*/
 
 
 
