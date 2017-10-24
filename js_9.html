@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*function Test() {
+        var x = 0;
+        return function () {
+            console.log(x++);
+        }
+    }
+
+    var f1 = Test(), f2 = Test();
+    f1();//0
+    f1();//1
+    f2();//0*/
+
+    function merge(str1, str2) {
+        //var len = str1.length<str2.length?str1.length:str2.length;
+        var len, maxStr;
+        if(str1.length < str2.length){
+            len = str1.length;
+            maxStr = str2;
+        }else{
+            len = str2.length;
+            maxStr = str1;
+        }
+        var str = "";
+        for(var i=0; i<len; i++){
+            str += str1.charAt(i) + str2.charAt(i);
+        }
+        return str + maxStr.substr(len);
+    }
+
+   console.log( merge("123456", 'abc')  );//"1a2b3c456"
+</script>
+</body>
+</html>
