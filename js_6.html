@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*function factorial(n) {
+        if(n <= 1){
+            return 1;
+        }
+        return factorial(n - 1) * n;
+    }
+
+    var n = 10;
+    factorial(n);*/
+
+    //有一个三位数x，被4除余2，被7除余3，被9除余5，请求出这个数
+
+    /*for(var i=100; i<=999; i++){
+        if(i%4==2 && i%7==3 && i%9==5){
+            console.log(i);
+        }
+    }*/
+//    求所有满足条件的四位数ABCD，它是13的倍数，
+    // 且第3位数加上第2位数等于第4位数（即：A=B+C）。
+    // （提示：对于四位数的整数x，通过Math.floor(x/1000)可求出第4位的数字，其他位数的提取也类似）
+
+    //x=1234   x/1000=1.234  Math.floor(1.234)=1;
+    //x=1234   x/100=12.34 Math.floor(12.34)=12 12%10=2
+    //x=1234   x%1000=234  Math.floor(234/100)=2
+    //x=1234   x%100=34  Math.floor(34/10)=3
+    /*for(var i=1000; i<=9999; i++){
+        var fourth = Math.floor(i/1000);
+        var third = Math.floor(i%1000/100);
+        var second = Math.floor(i%100/10);
+        if(i%13==0 && fourth==third+second){
+            console.log(i);
+        }
+    }*/
+
+    /*function aa(x) {
+        return 4*x*x + 3*x + 2;
+    }
+
+    aa();*/
+    //3: 1+1=2; fibonacci(1) + fibonacci(2)
+    //4: 1+2=3; fibonacci(2) + fibonacci(3)
+    /*function fibonacci(n) {
+        if(n <= 2){
+            return 1;
+        }
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+
+    console.log(   fibonacci(6)   );*/
+
+    var playTime = 10;
+    var winTime = 0;
+
+    function play() {
+        for(var i=0; i<3; i++){
+            var rand = Math.ceil(Math.random()*8)+1;
+            if(rand == 8){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    for(var i=0; i<playTime; i++){
+        var result = play();
+        if(result == true){
+            winTime++;
+        }
+    }
+
+    console.log(winTime / playTime * 100 + '%');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

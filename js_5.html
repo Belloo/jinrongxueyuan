@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*var x = 5;
+    if(x=2){
+        alert('haha');
+    }
+    switch(a){
+        case 1:
+        case 2:
+
+    }
+    while();*/
+    /*var number = prompt('请输入数字！');
+
+    //number = parseInt(number);
+    number = number*1;
+
+    switch (number){
+        case 1:
+            alert('星期一');
+            break;
+        case 2:
+            alert('星期二');
+            break;
+    }*/
+    //2! -> 1!*2
+    //3! -> 2!*3
+    function factorial(n) {
+        if(n <= 1){
+            return 1;
+        }
+        return factorial(n-1) * n;
+    }
+
+/*
+    var num = prompt('请输入一个整数:');
+
+    console.log(  factorial(num)  );*/
+//编写程序，计算 1!+2!+3!+…..＋10！的结果。
+
+    var num = prompt('请输入数字：');
+
+    var sum = 0;
+    for(var i=1; i<=num; i++){
+        sum += factorial(i);
+    }
+
+    console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+//        alert('Hello world!');
+//        console.log('Hello world!');
+//         var(variable, 变量)
+//        js是一种弱类型的语言
+//        js的数据类型：
+//            1. 基本数据类型：number, string, boolean, undefined(未定义), null
+//            2. 引用类型：对象object
+       /*var a = 5; //number
+       var b = "abc"; // string
+       var c = true; // boolean
+       var d = 4.5; // number
+        var f; // undefined*/
+
+//        console.log(f);
+
+//        for(var i=0; i<10; i++){
+//            if(i == 3){
+//                break;
+//            }
+//            console.log(i);
+//        }
+
+        /*var i=0;
+        while(i<10){
+            console.log(i);
+            i++;
+        }*/
+        /*var i=0;
+        do{
+            console.log(i);
+            i++;
+        }while (i<10);*/
+
+        /*function test(name, age) {
+            //console.log(name + ', ' + age);
+            //return name + ', ' + age;
+        }
+
+        var str = test('lisi', 23);
+        console.log(str);*/
+
+        /*function test(name) {// 函数声明
+            alert(name);
+        }*/
+
+        /*var test = function (name) {
+            alert(name);
+        }*/
+
+        var c = 5;
+
+        function a(b) {
+            b(function (d) {
+                d('lisi');
+            });
+        }
+
+        a(function (c) {
+            c(function (e) {
+                alert(e);
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
