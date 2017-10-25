@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var i = 0;
+    var aa = setInterval(function(){
+        console.log(Math.random());
+        i++;
+        if(i==10){
+            clearInterval(aa);
+        }
+    }, 500);
+</script>
+</body>
+</html>
