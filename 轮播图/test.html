@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+            position: relative;
+            top: 0;
+            left: 0;
+            opacity: 1;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #00ff00;
+            opacity: .5;/* 0~1 */
+            filter: alpha(opacity=50); /* 0~100 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <ul id="ul1">
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+    </ul> -->
+    <button id="btn">开始你的表演</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <a href="http://www.baidu.com" id="bd">baidu</a>
+
+    <script src='jslib.js'></script>
+    <script>
+        var oDiv1 = document.getElementById('div1');
+        var oBtn = document.getElementById('btn');
+        oBtn.onclick = function () {
+            /* animate(oDiv1, {
+                width: 500
+            }, function(){
+                animate(oDiv1, {
+                    height: 500
+                });
+            }); */
+            animate(oDiv1, {
+                opacity: 0
+            });
+        };
+
+
+        var a = 5;
+        console.log(window);
+
+        var oBd = document.getElementById('bd');
+        oBd.onclick = function(){
+            return false;//阻止默认行为
+        };
+
+    </script>
+</body>
+
+</html>
